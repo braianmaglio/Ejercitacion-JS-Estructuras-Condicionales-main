@@ -12,11 +12,8 @@ const alumno = {
     nombre: "Braian",
     nota: 5.5,
 }
-
 let nota = alumno.nota;
 let calificacion = " ";
-
-
 
 const desaprobado = (nota >= 0 && nota <= 2.9)? calificacion = "Desaprobado" : "";
 const aprobado = (nota >= 3 && nota <= 5.9) ? calificacion = "Aprobado" : "";
