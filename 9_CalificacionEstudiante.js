@@ -10,23 +10,17 @@
 
 const alumno = {
     nombre: "Braian",
-    nota: 6,
+    nota: 5.5,
 }
 
 let nota = alumno.nota;
 let calificacion = " ";
 
-if (nota >= 0 && nota <= 2.9) {
-    calificacion = "Desaprobado";
-} else if (nota >= 3 && nota <= 5.9) {
-    calificacion = "Aprobado";
-} else if (nota >= 6 && nota <= 8.9) {
-    calificacion = "Notable";
-} else if (nota >= 9 && nota <= 10) {
-    calificacion = "Sobresaliente";
-} else if (nota >= 10) {
-    console.log("Error: Nota inválida");
-    return
-}
+
+
+const desaprobado = (nota >= 0 && nota <= 2.9)? calificacion = "Desaprobado" : "";
+const aprobado = (nota >= 3 && nota <= 5.9) ? calificacion = "Aprobado" : "";
+const notable = (nota >= 6 && nota <= 8.9) ? calificacion = "Notable" : "";
+const sobresaliente = (nota >= 9 && nota <= 10) ? calificacion = "Sobresaliente" : "";
 
 console.log(`${alumno.nombre}: ${calificacion}`);
